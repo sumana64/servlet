@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<link
+	href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+	rel="stylesheet"
+	integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+	crossorigin="anonymous">
+</head>
+<body>
+<form action="register" method="post">
+
+<div class="p-3 mb-2 bg-success-subtle text-emphasis-success">
+
+             <div class="mb-3">
+				<label class="form-label">UserName</label> <input type="text"
+					class="form-control" placeholder="UserName" name="userName"
+					required="required">
+			</div>
+
+			<div class="mb-3">
+				<label class="form-label">Email</label> <input type="email"
+					class="form-control" placeholder="Email" name="Email"
+					required="required">
+			</div>
+
+			<div class="mb-3">
+				<label class="form-label">PhoneNo</label> <input type="tel"
+					class="form-control" placeholder="PhoneNo" name="PhoneNo"
+					required="required">
+			</div>
+
+			<div class="mb-3">
+				<label class="form-label">Address</label> <input type="text"
+					class="form-control" placeholder="Address" name="Address"
+					required="required">
+			</div>
+
+			<div class="mb-3">
+				<label class="form-label">PassWord</label> <input type="PassWord"
+					class="form-control" placeholder="PassWord" name="PassWord"
+					required="required">
+			</div>
+			<br>
+
+            <div>
+			<h4>select gender</h4>
+			<input class="form-check-input" type="radio" name="flexRadioDefault"
+			id="flexRadioDefault1"> <label class="form-check-label"
+			for="flexRadioDefault1">male</label>
+			</div>
+			
+			<div>
+			<input class="form-check-input" type="radio" name="flexRadioDefault"
+			id="flexRadioDefault1"> <label class="form-check-label"
+			for="flexRadioDefault1">female </label>
+			</div>
+			
+			
+			<div>
+			<input class="form-check-input" type="radio" name="flexRadioDefault"
+			id="flexRadioDefault1"> <label class="form-check-label"
+			for="flexRadioDefault1">others </label>
+			</div>
+			<br>
+            
+            <h4>want to continue</h4>
+            <div class="form-check">
+           <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+           <label class="form-check-label" for="flexCheckDefault">
+           Yes
+           </label>
+           </div>
+           
+           <div class="form-check">
+           <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+           <label class="form-check-label" for="flexCheckDefault">
+           No
+           </label>
+           </div>
+           <br>
+			
+			<select class="form-select" aria-label="Default select example">
+			<option selected>Are you?</option>
+			<option value="1">student</option>
+			<option value="2">educator</option>
+			<option value="3">clinicians</option>
+			</select> 
+			<br>
+			
+<input type="submit" class="btn btn-success">
+	
+</form>
+
+</body>
+</html>

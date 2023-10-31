@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>hoststar</title>
+<link
+	href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+	rel="stylesheet"
+	integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+	crossorigin="anonymous">
+	<style>
+body {
+background-image: url('data:image/png;base64,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');
+background-repeat: no-repeat;
+  background-attachment: fixed; 
+  background-size: 100% 100%;
+}
+</style>
+</head>
+<body>
+	<nav class="navbar navbar-expand-lg bg-warning">
+		<div class="container-fluid">
+        
+        <a class="navbar-brand" href="#">
+			
+			<img src="https://play-lh.googleusercontent.com/bHag_Q5sGOjrRDGsjFSII1O4CMr_Mz5k5gNjLAKeJhjKoGqjcYk-wcLXJQfB5DXqKdw"
+				alt="logo" width="50" height="50">
+            </a>
+			 
+			  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+					<li class="nav-item"><a class="nav-link active"
+						aria-current="page" href="index.html">Home</a></li>
+
+					<li class="nav-item"><a class="nav-link"
+						href="Registration.html">Registration</a></li>
+
+					<li class="nav-item"><a class="nav-link" href="login.html">Login</a>
+					</li>
+
+                    </ul>
+					<form class="d-flex" role="search">
+						<input class="form-control me-2" type="search"
+							placeholder="Search" aria-label="Search">
+						<button class="btn btn-outline-success" type="submit">Search</button>
+					</form>
+			</div>
+		</div>
+	</nav>
+	<marquee>
+		<h4 span style = "color: red;">welcome to Hostar</span></h4>
+	</marquee>
+</body>
+</html>
